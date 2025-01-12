@@ -41,7 +41,7 @@ const PaymentDetail = () => {
               <div>
                 <h3 className="payment-method-description">Scan QRIS berikut untuk membayar.</h3>
                 <img
-                  src="/img/QRIS.png"
+                  src="src\assets\img\QRIS.png"
                   alt="QRIS"
                   className="QRIS-img"
                 />

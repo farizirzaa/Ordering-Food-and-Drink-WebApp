@@ -20,7 +20,7 @@ const Home = () => {
 
   // Ambil data menu dari API
   useEffect(() => {
-    fetch('api-sbd.great-site.net/order_makanan/backend/api/menu/getMenu.php')
+    fetch('http://api-sbd.great-site.net/order_makanan/backend/api/menu/getMenu.php')
       .then(response => response.json())
       .then(data => {
         // Format data agar sesuai dengan struktur yang diinginkan
@@ -74,7 +74,10 @@ const Home = () => {
   return (
     <div className="layout">
       <main className="flex-1 p-6 flex flex-col">
-        <h3 className="sub-header">Pilihan Menu</h3>
+        <div className='justify-between flex items-center'>
+          <h3 className="sub-header">Pilihan Menu</h3>
+          <h3 className='meja'>Meja #1</h3>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredMenuItems.map((item) => (
             <MenuItem key={item.id} item={item} addToCart={addToCart} />
