@@ -20,7 +20,7 @@ const Home = () => {
 
   // Ambil data menu dari API
   useEffect(() => {
-    fetch('http://localhost/order_makanan/backend/api/menu/getMenu.php')
+    fetch('api-sbd.great-site.net/order_makanan/backend/api/menu/getMenu.php')
       .then(response => response.json())
       .then(data => {
         // Format data agar sesuai dengan struktur yang diinginkan
