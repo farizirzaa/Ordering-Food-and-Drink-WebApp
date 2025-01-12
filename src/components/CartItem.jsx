@@ -2,7 +2,7 @@ import React from 'react';
 
 const CartItem = ({ item }) => {
   return (
-    <li className="border-b border-gray-600 py-2 text-gray-200">
+    <li className="border  py-2 text-white p-3 mb-3 rounded-lg  bg-amber-500 font-semibold pb-3">
       {item.name} x {item.quantity} = Rp {item.price * item.quantity}
     </li>
   );

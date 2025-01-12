@@ -1,6 +1,6 @@
 /* Header dengan gradasi*/
 .header-gradient {
-  background: linear-gradient(to right, #4e73df, #1d72b8);
+  background: linear-gradient(to right,#f2a852, #a65800);
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -12,11 +12,11 @@
 
 /* Sub-header */
 .sub-header {
-  font-size: 1.5rem;
-  color: #4e73df;
+  font-size: 2rem;
+  color: #e9b139;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Styling untuk Menu Item */
@@ -50,8 +50,8 @@
 .menuItem-details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   margin-bottom: 16px;
   width: 100%;
   word-wrap: break-word;
@@ -62,24 +62,24 @@
 .menuItem-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #4e73df;
+  color: #694215;
   margin-bottom: 8px;
   word-wrap: break-word; 
   overflow: hidden; 
   white-space: normal; 
-  text-align: center; 
+  text-align: left; 
 }
 
 .menuItem-description {
   color: #4b5563;
   font-size: 0.83rem;
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
   flex-grow: 1;
   word-wrap: break-word;
   overflow: hidden;
   white-space: normal; 
-  text-align: center;
+  text-align: left;
 }
 
 .menuItem-price {
@@ -87,17 +87,17 @@
   font-weight: 700;
   margin-top: 8px;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
   word-wrap: break-word;
   overflow: hidden;
   white-space: normal;
-  text-align: center;
+  text-align: left;
 }
 
 /* Tombol Tambahkan ke Pesanan */
 .menuItem-button {
   margin-top: 16px;
-  background-color: #28a745;
+  background-color: #f2a852;
   color: white;
   padding: 8px 8px;
   border-radius: 5px;
@@ -114,7 +114,7 @@
 }
 
 .menuItem-button:hover {
-  background-color: #218838;
+  background-color: #cf7c1d;
   transform: scale(1.05);
 }
 
@@ -124,7 +124,7 @@
 
 
 .menuItem-button:hover {
-  background-color: #218838;
+  background-color: #cf7c1d;
   transform: scale(1.05);
 }
 
@@ -133,16 +133,16 @@
 }
 
 /* Filter Menu */
-.filter-menu {
+/* .filter-menu {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
   margin-bottom: 20px;
 }
-
+ */
 .filter-button {
   padding: 10px 20px;
-  background-color: #4e73df;
+  background-color: #f2a852;
   color: white;
   border-radius: 8px;
   font-weight: bold;
@@ -151,7 +151,7 @@
 }
 
 .filter-button:hover {
-  background-color: #2e59d9;
+  background-color: #cf7c1d;
 }
 
 /* Styling untuk Cart Item */
@@ -174,8 +174,7 @@
 }
 
 .header-gradient {
-  background: linear-gradient(to right, #4e73df, #1d72b8);
-  color: white;
+  background: linear-gradient(to right, #f2a852, #a65800);
   padding: 12px 12px;
   text-align: center;
   font-size: 1.8rem;
@@ -213,6 +212,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
+  border:solid 1px #4b5563;
   color: #4b5563;
   margin-bottom: 12px;
 }
@@ -276,17 +276,17 @@
 }
 
 .button-primary1 {
-  background-color: #4e73df;
+  background-color: #f2a852;
   color: white;
 }
 
 .button-primary2 {
-  background-color: #4e73df;
+  background-color: #f2a852;
   color: white;
 }
 
 .button-primary1:hover, .button-primary2:hover {
-  background-color: #2e59d9;
+  background-color: #cf7c1d
 }
 
 
@@ -304,21 +304,20 @@
 }
 
 .button-primary {
-  background-color: #4e73df;
-  color: white;
+  background-color: #ffffff;
 }
 
 .button-primary:hover {
-  background-color: #2e59d9;
+  background-color: #ffffff;
 }
 
 .button-secondary {
-  background-color: #f39c12;
+  background-color: #ffffff;
   color: white;
 }
 
 .button-secondary:hover {
-  background-color: #e67e22;
+  background-color: #ffffff;
 }
 
 /* Styling untuk Layout */
@@ -334,9 +333,10 @@
 /* Styling untuk Sidebar */
 .sidebar {
   width: 25%;
-  background-color: #2d3748;
+  background-color: #ffffff;
   color: white;
   padding: 1.5rem;
+  border: #ffb14c solid 2px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -369,10 +369,11 @@
 .cart-summary {
   position: sticky;
   bottom: 0;
-  background-color: #2d3748;
+  background-color: #ffb14c;
+  border: #ffe1b9 solid 2px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+
   color: white;
   text-align: center;
 }
@@ -408,3 +409,12 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+
+#total {
+  color: #ffffff;
+  font-style: bold;
+}
+
+#buttoncheckout {
+  color: #f79f2c; }

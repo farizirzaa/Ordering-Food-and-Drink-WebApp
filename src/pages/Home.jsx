@@ -75,9 +75,6 @@ const Home = () => {
     <div className="layout">
       <main className="flex-1 p-6 flex flex-col">
         <h3 className="sub-header">Pilihan Menu</h3>
-        <div className="filter-menu">
-          <button onClick={() => setFilter('Semua Menu')} className="filter-button">Semua Menu</button>
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredMenuItems.map((item) => (
             <MenuItem key={item.id} item={item} addToCart={addToCart} />
@@ -89,7 +86,7 @@ const Home = () => {
         <h2 className='sub-title'>Pesanan Anda</h2>
         <div className="cart-list-container">
           {cart.length === 0 ? (
-            <p className="text-gray-400">Pesanan kosong</p>
+            <p className="text-gray-600 font-semibold text-center">Pesanan kosong</p>
           ) : (
             <ul className="cart-list">
               {cart.map((item) => (
@@ -100,9 +97,9 @@ const Home = () => {
         </div>
 
         <div className="cart-summary">
-          <h3>Total: Rp {getTotalPrice().toLocaleString()}</h3>
-          <button onClick={() => handlePayment('QRIS')} className="button button-primary">Pembayaran QRIS</button>
-          <button onClick={() => handlePayment('Tunai')} className="button button-secondary">Pembayaran Tunai</button>
+          <h3 id='total' className='font-semibold'>Total: Rp {getTotalPrice().toLocaleString()}</h3>
+          <button onClick={() => handlePayment('QRIS')} className="button button-primary" id='buttoncheckout'>Pembayaran QRIS</button>
+          <button onClick={() => handlePayment('Tunai')} className="button button-secondary " id='buttoncheckout'>Pembayaran Tunai</button>
         </div>
       </aside>
     </div>
